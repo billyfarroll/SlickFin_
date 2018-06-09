@@ -1,0 +1,1893 @@
+body {
+	
+	font-family: 'Quicksand', sans-serif;
+	font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+	background-color: white;
+	
+}
+
+/** Loading Screen **/
+
+#logo {
+  
+  padding: 10px;
+  margin-bottom: 20px;
+  
+}
+
+
+.loading-page {
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: #0f0f0f;
+  z-index: 1000;
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.loading-page .counter {
+  text-align: center;
+}
+
+.loading-page .counter p {
+  font-size: 40px;
+  font-weight: 100;
+  color: #4f9bd1;
+  margin: 0px;
+  padding: 0px;
+ }
+
+.loading-page .counter h1 {
+  color: white;
+  font-size: 60px;
+  margin: 0px;
+  padding: 0px;
+}
+
+/** hairline rule - loading bar **/
+.loading-page .counter hr {
+  background: #4f9bd1;
+  border: none;
+  height: 1px;
+}
+.loading-page .counter {
+  position: relative;
+  width: 300px;
+}
+/** hairline rule - loading bar **/
+
+
+
+/** Loading Screen **/
+
+
+/* BACKGROUND IMAGES */
+
+.header_img {
+    max-height: 1000px;
+    width: 100%;
+    background-image: linear-gradient(150deg, rgba(68, 0, 139, 0.7), rgba(47, 0, 120, 0.6) 10%, rgba(27, 57, 129, 0.5) 30%, rgba(41, 123, 192, 0.5) 50%, rgba(114, 240, 255, 0.6) 86%, rgba(84, 183, 249, 0.7)), url("../img/header_images/background_coffee.png");
+    background-position: 0%, 0%, 50%, 50%;
+    background-attachment: scroll, fixed;
+    background-size: auto, cover;
+
+
+}
+
+#background_about {
+	
+	background-image: url(../img/background_images/background_about.png);
+	background-size: cover;
+	max-height: 650px;
+    background-size: auto, cover;
+	margin-top: 30px;
+	padding: 0; 
+	width: 100%;
+	
+}
+
+#background_contact {
+	
+	
+	width: 100%;
+	padding: 10px;
+	background-color: rgba(36, 19, 76, 1);
+	
+}
+
+#footer {
+	
+	background-color: rgba(34, 24, 58, 1);
+	border-top: 2px solid black;
+	padding: 20px 0px;
+	
+}
+
+#thanks_background {
+	
+	background-color: rgba(36, 19, 76, 1);
+	
+	
+}
+
+
+/*********** VIDEO BACKGROUND ***********/
+
+#background_work {
+	
+	min-height: 650px;
+    position: relative;
+    overflow: hidden;
+	
+}
+
+/* The only rule that matters */
+#video_background {
+/*  making the video fullscreen  */
+  position: absolute;
+  background-size: cover;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -5;
+}
+
+/*********** VIDEO BACKGROUND ***********/
+
+
+
+/* BACKGROUND IMAGES */
+
+.logo-container-div {
+  min-height: 70vh; /* How far of the top of the screen */
+  transition: opacity 0.4s ease-in-out;
+  opacity: 1;
+  /* Provide Window height */
+  /** Positions the logo over the background image and shows how mught of the top it would like to be seen - another type of absolute **/
+  
+}
+
+
+.logo-container-div.show {
+  
+  opacity: 0; 
+  
+}
+/** For the fade out effect in JS**/
+
+.logo-wrapper {
+	
+	position: fixed;
+	padding: 20px;
+	
+}
+
+.fade {
+  opacity:0;
+}
+
+/* FadeIn called by JS index.js */
+.FadeIn {
+    -webkit-animation: slideIn 0.8s ease 0.3s forwards;
+    animation: slideIn 0.8s ease 0.3s forwards;
+	-webkit-animation-delay: 2s;
+	animation-delay: 2s;
+}
+
+@-webkit-keyframes slideIn {
+    0%{
+        -webkit-transform: translateY(40px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideIn {
+    0% {
+        -webkit-transform: translateY(40px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+        opacity: 1;
+    }
+}
+/* FadeIn called by JS index.js */
+
+
+
+.fadeDown {
+	
+	opacity: 0;
+	
+}
+
+/* FadeIn called by JS index.js */
+.FadeDown {
+    -webkit-animation: slideDown 0.8s ease 0.3s forwards;
+    animation: slideDown 0.8s ease 0.3s forwards;
+	-webkit-animation-delay: 2s;
+	animation-delay: 2s;
+}
+
+@-webkit-keyframes slideDown {
+    0%{
+        -webkit-transform: translateY(-40px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideDown {
+    0% {
+        -webkit-transform: translateY(-40px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+        opacity: 1;
+    }
+}
+/* FadeIn called by JS index.js */
+
+.fadeDown1 {
+	
+	opacity: 0;
+	
+}
+
+/* FadeIn called by JS index.js */
+.FadeDown1 {
+    -webkit-animation: slideDown1 0.8s ease 0.3s forwards;
+    animation: slideDown1 0.8s ease 0.3s forwards;
+
+}
+
+@-webkit-keyframes slideDown1 {
+    0%{
+        -webkit-transform: translateY(-40px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideDown1 {
+    0% {
+        -webkit-transform: translateY(-40px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+        opacity: 1;
+    }
+}
+/* FadeIn called by JS index.js */
+
+
+
+.fadeCenter {
+  opacity:0;
+}
+
+/* FadeIn called by JS index.js */
+.FadeCenter {
+    -webkit-animation: slideCenter 0.8s ease 0.3s forwards;
+    animation: slideCenter 0.8s ease 0.3s forwards;
+	
+}
+
+@-webkit-keyframes slideCenter {
+    0%{
+        -webkit-transform: translateY(40px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideCenter {
+    0% {
+        -webkit-transform: translateY(40px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+        opacity: 1;
+    }
+}
+/* FadeIn called by JS index.js */
+
+
+
+.fadeLeft {
+	
+	opacity: 0;
+	
+}
+
+
+
+
+/* FadeIn called by JS index.js */
+.FadeLeft {
+    -webkit-animation: slideLeft 1.3s ease 0.8s forwards;
+    animation: slideLeft 1.3s ease 0.8s forwards;
+	
+}
+
+@-webkit-keyframes slideLeft {
+    0%{
+        -webkit-transform: translateX(-40px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideLeft {
+    0% {
+        -webkit-transform: translateX(-40px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0px);
+        opacity: 1;
+    }
+}
+/* FadeIn called by JS index.js */
+
+
+
+
+.fadeRight {
+	
+	opacity: 0;
+	
+}
+
+
+/* FadeIn called by JS index.js */
+.FadeRight {
+    -webkit-animation: slideRight 1.3s ease 0.8s forwards;
+    animation: slideRight 1.3s ease 0.8s forwards;
+	
+}
+
+@-webkit-keyframes slideRight {
+    0%{
+        -webkit-transform: translateX(40px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideRight {
+    0% {
+        -webkit-transform: translateX(40px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0px);
+        opacity: 1;
+    }
+}
+/* FadeIn called by JS index.js */
+
+
+
+/* Image shadow effect */
+
+.logoImage {
+	
+	box-shadow: rgba(0,0,0,0.8) 0 0 65px;
+	border-radius: 275px; 
+	
+	
+}
+
+/* Image shadow effect */
+
+
+
+/* HEADER image End */
+
+
+/** Top Arrow style **/
+
+#return-to-top.show {
+  
+  opacity: 1;
+  
+}
+
+#return-to-top {
+	
+	z-index: 1000;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background: rgba(83, 138, 249, 0.4);
+    width: 90px;
+    height: 60px;
+    text-decoration: none;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    -webkit-transition: all 1s linear;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 2s ease-in-out;
+    transition: opacity 0.4s ease-out;
+	opacity: 0; 
+   
+}
+
+#return-to-top i {
+	z-index: 1001;
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 33px;
+    top: 16px;
+    font-size: 25px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+
+/** When hovering over the back-to-top button ****/
+
+#return-to-top:hover {
+    background: rgba(185, 118, 245, 0.4);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+    
+}
+
+/** Top Arrow style **/
+
+
+/** Navigation **/
+
+.navigation_bar{
+  position: absolute;
+  z-index: 5;
+  height: 70px;
+  width: 100%;
+  background-color: rgba(215,215,215,0.45);
+  
+}
+
+.menu_bar{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  
+}
+
+
+.link  {
+  position:relative;
+  color: black;
+  height: 68px;
+  line-height: 60px;
+  text-align: center;
+  padding: 0 20px;
+  font-size: 25px;
+  cursor: pointer;
+  font-family: 'Quicksand', sans-serif;
+  border: 1px solid rgba(7, 134, 252, 0);
+  background: rgba(255, 255, 255, 0.55);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  
+  
+}
+
+
+
+.link:hover {
+  border: 1px solid rgba(7, 134, 252,0);  /*When hover hide the hover to alpha 0*/
+  color: white;
+  text-decoration: none; 
+  background: rgba(7, 134, 252, 0.7);
+  
+}
+
+.link::before, .link::after {
+  width: 100%;
+  height:100%;
+  z-index: 3;
+  content:'';
+  position: absolute;
+  top:0;
+  left:0;
+  box-sizing: border-box;
+  -webkit-transform: scale(0); /*This is what changes the scale from 0 - 1*/
+  transition: 0.5s;
+}
+
+
+.cover::before {
+  border-bottom: 2px solid #44008b;
+  border-left: 2px solid #44008b;
+  -webkit-transform-origin: 100% 0%; /* Start 0 */
+}
+
+.cover::after {
+  border-top: 2px solid #44008b;
+  border-right: 2px solid #44008b;
+  -webkit-transform-origin: 0% 100%; /* End 100 */
+}
+
+.link:hover::after, .link:hover::before {
+  -webkit-transform: scale(1); /*make the hover appear in scale*/
+}
+
+
+
+
+/* Scrolling navigation START */ 
+
+
+.link_logo {
+	
+	padding: 0px 20px; 
+	width: 130px;
+	height: 85px; 
+}
+
+#nav_bar {
+	
+  background: rgba(26, 111, 206, 0.52); 
+  padding: 1em; 
+  width: 100%;
+  display: none; 
+  position: fixed; 
+  top: 0;
+  z-index: 10;
+	
+}
+
+.menu_bar_scroll {
+	
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+	
+}
+
+/* Usually you'd give the link and link_scroll classes for the navigation of the site the same css attributes, but each are in somewhat unique */
+
+.link_scroll {
+	
+  position:relative;
+  color: white;
+  height: 68px;
+  line-height: 60px;
+  text-align: center;
+  padding: 0 20px;
+  font-size: 25px;
+  cursor: pointer;
+  font-family: 'Quicksand', sans-serif;
+  border: 1px solid rgba(7, 134, 252, 0);
+  background: rgba(255, 255, 255, 0);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+	
+}
+
+.link_scroll:hover {
+  border: 1px solid rgba(7, 134, 252,0);  /*When hover hide the hover to alpha 0*/
+  color: black;
+  text-decoration: none; 
+  background: rgba(7, 134, 252, 0.7);
+  
+}
+
+.link_scroll::before, .link_scroll::after {
+  width: 100%;
+  height:100%;
+  z-index: 11;
+  content:'';
+  position: absolute;
+  top:0;
+  left:0;
+  box-sizing: border-box;
+  -webkit-transform: scale(0); /*This is what changes the scale from 0 - 1*/
+  transition: 0.5s;
+}
+
+.cover::before {
+  border-bottom: 2px solid #44008b;
+  border-left: 2px solid #44008b;
+  -webkit-transform-origin: 100% 0%; /* Start 0 */
+}
+
+.cover::after {
+  border-top: 2px solid #44008b;
+  border-right: 2px solid #44008b;
+  -webkit-transform-origin: 0% 100%; /* End 100 */
+}
+
+.link_scroll:hover::after, .link_scroll:hover::before {
+  -webkit-transform: scale(1); /*make the hover appear in scale*/
+}
+
+
+/* Scrolling navigation */
+
+/** Navigation **/
+
+
+
+
+/** Titles **/
+
+#titles_aboutme, #titles_work {
+	
+	font-size: 2.8em;
+
+	
+	
+}
+
+#titles1 {
+	
+	font-size: 1.3em;
+	
+}
+
+#titles2 {
+		
+		font-size: 1.3em;
+	    color: white;
+		
+	}
+
+.work_titles {
+	
+	font-size: 1.3em;
+	font-weight: bold;
+	margin: 10px 0px;
+	color: white;
+	
+}
+
+/** Titles **/
+
+/** Text **/
+
+.text {
+	
+	font-weight: 500;
+	font-size: 1.05em; 
+	
+}
+
+.text_work {
+	
+	color: white;
+	background-color: rgba(0, 0, 0, 0.22);
+	border-radius: 25px;
+	padding; 10px;
+	
+}
+
+@-webkit-keyframes bounce {
+        0% {
+    transform: scale(1,1) translate(0px, 0px);
+  }
+  
+  30%{
+    transform: scale(1,1) translate(0px, 2px); 
+  }
+
+  75%{
+    transform: scale(1,1) translate(0px, -5px); 
+  }
+  
+ 100% {
+    transform: scale(1,1) translate(0px, 0px);
+  }
+}
+
+.bounce {
+      text-align:center;
+      font-size: 1.3em;
+      padding: 10px;  
+     -webkit-animation: bounce 1s infinite;
+	  margin: 20px 0px;
+}
+
+/****** Shimmer & fade effect together *****/
+	
+	.shimmer_fade, .work_fade {
+  opacity: 0;
+ }
+
+.shimmer, .work_shimmer {
+  display: inline-block; /* NEED - makes background horizontal for the shimmer to work */
+  background: black -webkit-gradient(linear, 100% 0, 0 0, from(#328fba), color-stop(0.5, #9240b2), to(#328fba));
+  background-position: -4rem top;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text; /*NEED to cut out of background*/
+  -webkit-background-size: 5rem 100%;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation-name: shimmer, grow;
+  -webkit-animation: shimmer 3s, grow 1.2s ease 0.3s forwards;
+  -webkit-animation-iteration-count: infinite, 1;
+  -webkit-animation-delay: 0.45s, 1.7s;
+ 
+  
+}
+
+/* Our animation starting and finishing points */
+
+@-webkit-keyframes shimmer {
+  0% {
+    background-position: -4rem top;
+    /*50px off top*/
+    
+  }
+  
+  100% {
+    background-position: 23rem top;
+    /*200px off top*/
+    
+  }
+}
+
+@-webkit-keyframes grow {
+    0% {
+        -webkit-transform: scale(0);
+        opacity: 0;
+    }
+  
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -4rem top;
+    /*50px off top*/
+    
+  }
+  
+  100% {
+    background-position: 23rem top;
+    /*200px off top*/
+    
+  }
+}
+
+@keyframes grow {
+    0% {
+        -webkit-transform: scale(0);
+        opacity: 0;
+    }
+  
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/** FADE for small body text **/
+
+.grow_fade {
+	
+	opacity: 0;
+	
+	
+}
+
+
+.grow_body {
+	
+  animation-name: grow_small;
+  animation: grow_small 1.2s ease 0.3s forwards;
+  animation-iteration-count: 1;
+  -webkit-animation-name: grow_small;
+  -webkit-animation: grow_small 1.2s ease 0.3s forwards;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-delay: 1.7s;
+  animation-delay: 1.7s;
+ 
+	
+}
+
+@-webkit-keyframes grow_small {
+    0% {
+        -webkit-transform: scale(0);
+        opacity: 0;
+    }
+  
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes grow_small {
+    0% {
+        -webkit-transform: scale(0);
+        opacity: 0;
+    }
+  
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/** FADE for small body text **/
+
+/****** Shimmer & fade effect together *****/	
+
+
+
+	/** Animate text -- PULSE **/
+
+
+    .animated {
+  		-webkit-animation-duration: 1s;
+  		animation-duration: 1s;
+  		-webkit-animation-fill-mode: both;
+  		animation-fill-mode: both;
+	}
+
+	.animated.infinite {
+ 		 -webkit-animation-iteration-count: infinite;
+ 		 animation-iteration-count: infinite;
+	}
+
+
+
+@-webkit-keyframes pulse {
+  	from {
+   	 -webkit-transform: scale3d(1, 1, 1);
+   	 transform: scale3d(1, 1, 1);
+  	}
+  	50% {
+   	 -webkit-transform: scale3d(1.05, 1.05, 1.05);
+   	 transform: scale3d(1.05, 1.05, 1.05);
+  	}
+ 	 to {
+  	  -webkit-transform: scale3d(1, 1, 1);
+  	  transform: scale3d(1, 1, 1);
+  	  }
+	}
+@keyframes pulse {
+  		from {
+    	-webkit-transform: scale3d(1, 1, 1);
+    	transform: scale3d(1, 1, 1);
+  	}
+  		50% {
+   		 -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    	 transform: scale3d(1.05, 1.05, 1.05);
+  	}
+  		to {
+    	-webkit-transform: scale3d(1, 1, 1);
+    	transform: scale3d(1, 1, 1);
+  	}
+   }
+		.pulse {
+ 			 -webkit-animation-name: pulse;
+  				animation-name: pulse;
+	}
+
+
+
+
+/** Animate text -- PULSE **/
+
+
+
+
+/** Text **/
+
+
+/** Body Links **/
+
+
+#body_links {
+	
+	color: black;
+	
+}
+
+/** Body Links **/
+
+/** Body image effect - hover **/
+
+.profile {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+    border-radius: 150px;
+	box-shadow: 0 8px 15px -6px rgb(4, 4, 4);
+}
+.profile .cover, .profile .content {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+	padding: 25px 5px 0px 5px;
+}
+.profile img {
+    display: block;
+    position: relative
+}
+.profile h2 {
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 20px 0 0 0
+}
+.profile p {
+  
+    font-size: 12px;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-align: center
+}
+
+#contain_items {
+  
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.profile a.info {
+    float: left;
+    text-decoration: none;
+    padding: 6.5px;
+    background: rgba(255, 255, 255, 0.5);
+    color: #fff;
+    box-shadow: 0 0 1px white;
+    margin: 0px 5px;
+ 
+}
+.profile a.info:hover {
+    box-shadow: 0 0 10px #000
+}
+
+.profile a.social {
+  
+  float: left;
+  box-shadow: 0 0 0px #000;
+  padding: 3px;
+}
+
+.profile a.social:hover {
+  
+  box-shadow: 0 0 10px #000
+  
+}
+
+.profile_hover img { 
+    transition: all 0.2s linear;
+}
+.profile_hover .cover {
+    opacity: 0;
+    background-color: rgba(68, 0, 139, 0.7); 
+    transition: all 0.4s ease-in-out;
+}
+.profile_hover h2 {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+.profile_hover p { 
+    transform: translateY(100px);
+    opacity: 0;
+	transition: all 0.2s linear;
+}
+.profile_hover a.info{
+    opacity: 0;
+	  transition: all 0.2s ease-in-out;
+}
+
+.profile_hover a.social{
+    opacity: 0;
+	  transition: all 0.2s ease-in-out;
+}
+
+/** Hover effects **/
+
+.profile_hover:hover img { 
+	transform: scale(1.1);
+} 
+.profile_hover:hover .cover { 
+	opacity: 1;
+}
+.profile_hover:hover h2,
+.profile_hover:hover p,
+.profile_hover:hover a.info,
+.profile_hover:hover a.social{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.profile_hover:hover p {
+    transition-delay: 0.1s;
+}
+
+
+/** Body image effect - hover **/
+
+/** WORK section - body **/
+
+.work_box {
+	
+	padding: 10px;
+	background-color: rgba(159, 199, 249, 0.45);
+	border-radius: 25px;
+	margin: 0px 5px;
+	
+}
+
+.work_img1  {
+	
+	-webkit-animation: float1 5s ease-in-out forwards;
+    -webkit-animation-iteration-count: infinite;
+	-webkit-animation-delay: 1s;
+	animation: float1 5s ease-in-out forwards;
+    animation-iteration-count: infinite;
+	animation-delay: 1s
+	
+}
+
+@keyframes float1 {
+  0% {
+    transform: translateY(0px)
+    
+  }
+  50% {
+    transform: translateY(5px)
+  }
+  100% {
+    transform: translateY(0px)
+  }
+}
+
+.work_img2 {
+	
+	-webkit-animation: float2 6s ease-in-out forwards;
+    -webkit-animation-iteration-count: infinite;
+	animation: float2 6s ease-in-out forwards;
+    animation-iteration-count: infinite;
+	
+}
+
+@keyframes float2 {
+  0% {
+    transform: translateY(0px)
+    
+  }
+  50% {
+    transform: translateY(7px)
+  }
+  100% {
+    transform: translateY(0px)
+  }
+}
+
+.work_img3 {
+	
+	-webkit-animation: float3 7s ease-in-out forwards;
+    -webkit-animation-iteration-count: infinite;
+	-webkit-animation-delay: 0.5s;
+	animation: float3 7s ease-in-out forwards;
+    animation-iteration-count: infinite;
+	animation-delay: 0.5s
+	
+}
+
+@keyframes float3 {
+  0% {
+    transform: translateY(0px)
+    
+  }
+  50% {
+    transform: translateY(7px)
+  }
+  100% {
+    transform: translateY(0px)
+  }
+}
+
+
+.work_title {
+	
+	margin-bottom: 20px;
+	background-color: rgba(159, 199, 249, 0.45);
+	border-radius: 30px;
+	
+}
+
+/** WORK section - body **/
+
+
+/***** Contact Form *****/
+
+section {
+  background: rgba(90, 90, 121, 0.46);
+  margin: 60px auto 120px;
+  border-top: 5px solid rgba(255, 255, 255, 0.15);
+  text-align: center;
+  padding: 50px 0 80px;
+  width: 100%;
+  max-width: 1200px;
+  font-size: 0.8em;
+  color: white;
+  
+}
+/** Inside the section - form */
+form { 
+  width: 75.3333333333%;
+  margin: 0 auto;
+}
+/** Inside the section - form */
+
+form .field {
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/** label sections - name, email, mobile and message **/
+form .field label {
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(71, 60, 109, 1);
+  width: 100%;
+  padding: 14px 0;
+  font-size: 2em;
+  letter-spacing: 0.04em;
+  -webkit-transition: all 333ms ease-in-out;
+  -moz-transition: all 333ms ease-in-out;
+  -o-transition: all 333ms ease-in-out;
+  -ms-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+/** label sections - name, email, mobile and message **/
+
+/** For the DONE span text **/
+form .field label + span {
+  
+  text-transform: uppercase;
+  opacity: 0;
+  color: white;
+  display: block;
+  position: absolute;
+  top: 14px;
+  left: 4.75%;
+  font-size: 2em;
+  -webkit-transition: all 333ms ease-in-out;
+  -moz-transition: all 333ms ease-in-out;
+  -o-transition: all 333ms ease-in-out;
+  -ms-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+/** For the DONE span text **/
+
+/*** This is for when the field is selected by the user ***/
+form .field input[type=text],
+form .field textarea {
+  border: none; /* user text */
+  background: white;
+  width: 100%;
+  margin: 0;
+  padding: 19px 0; /* user text */
+  padding-left: 21.5%;
+  color: black; /* user text */
+  font-size: 1.5em; /* user text */
+  letter-spacing: 0.1em; /* user text */
+ 
+}
+/*** This is for when the field is selected by the user ***/
+
+
+/** MESSAGE **/
+form .field input[type=text]#msg,
+form .field textarea#msg {
+  height: 65px;
+  resize: none;
+  -webkit-transition: all 333ms ease-in-out;
+  -moz-transition: all 333ms ease-in-out;
+  -o-transition: all 333ms ease-in-out;
+  -ms-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+/** MESSAGE **/
+
+/** Declaring we do not want an outline when the input field is selected **/
+form .field input[type=text]:focus, form .field input[type=text].focused,
+form .field textarea:focus,
+form .field textarea.focused {
+  outline: none;
+}
+/** Declaring we do not want an outline when the input field is selected **/
+
+
+/** MESSAGE when selected **/
+form .field input[type=text]:focus#msg, form .field input[type=text].focused#msg,
+form .field textarea:focus#msg,
+form .field textarea.focused#msg {
+  padding-bottom: 170px;
+  
+}
+/** MESSAGE when selected **/
+
+/* label color when selected */
+form .field input[type=text]:focus + label, form .field input[type=text].focused + label,
+form .field textarea:focus + label,
+form .field textarea.focused + label {
+  width: 18%;
+  background: rgba(50, 95, 187, 1);
+  color: white;
+}
+/* label color when selected */
+
+/** When data is inputted the name, email etc. will change same colour as the background for the done box **/
+form .field input[type=text].focused + label,
+form .field textarea.focused + label {
+  color: rgba(50, 95, 187, 1);
+}
+
+/** This is for when the user selects the box and you have the email name box on the left side**/
+form .field:hover label {
+  width: 20%;
+  background: rgba(36, 19, 76, 1);
+  color: white;
+}
+
+
+/** SUBMIT BUTTON DISPLAY & HOVER **/
+form input[type=submit] {
+
+  cursor: pointer;
+  background: rgba(50, 95, 187, 1);
+  color: white;
+  -webkit-appearance: none;
+  border: none;
+  text-transform: uppercase;
+  position: relative;
+  padding: 13px 50px;
+  font-size: 1.7em;
+  letter-spacing: 0.08em;
+  font-weight: 100;
+  -webkit-transition: all 333ms ease-in-out;
+  -moz-transition: all 333ms ease-in-out;
+  -o-transition: all 333ms ease-in-out;
+  -ms-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+form input[type=submit]:hover {
+  background: white;
+  color: rgba(50, 95, 187, 1);
+}
+/** SUBMIT BUTTON DISPLAY & HOVER **/
+
+/** SUBMIT BUTTON when selected **/
+form input[type=submit]:focus {
+  outline: none;
+  background: #c45e5e;
+  color: white;
+}
+/** SUBMIT BUTTON when selected **/
+
+/***** Contact Form *****/
+
+/**** Footer Content ****/
+
+.copyright_text {
+	
+	color: white;
+	margin-bottom: 0px;
+	
+}
+
+.footer_icon {
+	
+  background-color: #ffffff38;
+  border: 1px solid #7a6e96;
+  padding: 9px 4px;
+  -webkit-transition: all 333ms ease-in-out;
+  -moz-transition: all 333ms ease-in-out;
+  -o-transition: all 333ms ease-in-out;
+  -ms-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+  
+}
+
+.footer_icon:hover {
+	
+  background-color: #ffffffbd;
+  border: 1px solid white;
+
+   
+	
+}
+
+.logo_footer {
+	
+	animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+	border-radius: 150px;
+	padding: 5px;
+	
+}
+
+@keyframes floating {
+    from  
+       { box-shadow: 0 5px 15px 0px rgba(123, 148, 239, 0.6);
+         transform: translate(0,  0px); }
+    65%  
+       {  box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+          transform: translate(0, 15px); }
+  
+    to   
+       { box-shadow: 0 5px 15px 0px rgba(123, 148, 239, 0.6);
+         transform: translate(0, -0px); }    
+}
+
+.footer_space {
+	
+	margin: 10px 0px;
+	
+	
+}
+
+/**** Footer Content ****/
+
+
+/***** Fade effect - on all elements back / forth  *****/
+
+.scr_fade {
+	
+	opacity: 1;
+	transition: all 700ms;
+	
+}
+
+/** Called by the index.js file **/
+
+.scr_fade.hidden {
+	
+	opacity: 0; 
+	
+}
+
+/** Called by the index.js file **/
+
+/***** Fade effect - on all elements back / forth  *****/
+
+/********* THANKS PAGE **********/
+
+.speech-bubble {
+	position: relative;
+	background: rgba(71, 60, 109, 1);
+	border-radius: 0.4em;
+	height: 10em;
+	padding: 15px 2px;
+	margin-top: 2em;
+	margin-right: 10em;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 35%;
+	width: 0;
+	height: 0;
+	border: 45px solid transparent;
+	border-right-color: rgba(71, 60, 109, 1);
+	border-left: 0;
+	border-top: 0;
+	margin-top: -22.5px;
+	margin-left: -45px;
+}
+
+
+
+#thank_text {
+	
+	font-weight: 500;
+	font-size: 1.25em;
+	color: white;
+	padding: 0px 5px;
+	
+}
+
+.thanks_link {
+	
+	margin-right: 9.6em;
+	margin-top: 1em;
+	
+}
+
+/********* THANKS PAGE **********/
+
+
+/******************** Media Queries *************************/
+
+
+/******* Contact Form Media Query *******/
+
+/** For MEDIUM **/
+
+@media only screen and (max-width: 990px) and (min-width: 768px) {
+  
+  form .field label {
+    
+    font-size: 1.74em;
+    padding-left: 2px;
+    padding-right: 2px;
+    
+  }
+  
+  form .field input[type=text],
+form .field textarea {
+  
+  width: 100%;
+  margin: 0;
+  padding: 18px 0; /* user text */
+  padding-left: 22%;
+  color: black; /* user text */
+  font-size: 1.3em; /* user text */
+  letter-spacing: 0.1em; /* user text */
+ 
+}
+  
+  form .field label + span {
+    
+    font-size: 1.8em;
+    left: 3.5%;
+    
+  }
+  
+  form { 
+  width: 85.3333333333%;
+  
+}
+  
+ form .field input[type=text]#msg,
+  form .field textarea#msg {
+    
+    height: 60px;
+    
+  }
+  
+}
+
+/** For MEDIUM **/
+
+/** Between MEDIUM & SMALL **/
+
+@media only screen and (max-width: 767px) and (min-width: 411px) {
+  
+  form .field label {
+    
+    font-size: 1.74em;
+    padding-left: 2px;
+    padding-right: 2px;
+    
+  }
+  
+  form .field input[type=text],
+form .field textarea {
+  
+  width: 100%;
+  margin: 0;
+  padding: 18px 0; /* user text */
+  padding-left: 30%;
+  color: black; /* user text */
+  font-size: 1.3em; /* user text */
+  letter-spacing: 0.1em; /* user text */
+ 
+}
+  
+  form .field label + span {
+    
+    font-size: 1.5em;
+    left: 6%;
+    top: 15px;
+    
+  }
+  
+  form { 
+  width: 85.3333333333%;
+  
+}
+  
+  /** Height of the message box**/
+ form .field input[type=text]#msg,
+  form .field textarea#msg {
+    
+    height: 60px;
+    
+  }
+   /** Height of the message box**/
+  
+  /** Width of the DONE box when user is finished **/
+  form .field input[type=text]:focus + label, form .field input[type=text].focused + label,
+form .field textarea:focus + label,
+form .field textarea.focused + label {
+  
+  width: 25%;
+  
+}
+ 
+/** Width of the message, email, and name boxes when user selects **/
+form .field:hover label {
+  width: 28%;
+  
+  }
+ 
+}
+/** Between MEDIUM & SMALL **/
+
+
+/** For SMALL **/
+
+@media only screen and (max-width: 410px) {
+  
+  form .field label {
+    
+    font-size: 0.9em;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+     
+  form .field input[type=text],
+form .field textarea {
+  
+  width: 100%;
+  margin: 0;
+  padding: 12px 0; /* user text */
+  padding-left: 24.5%;
+  color: black; /* user text */
+  font-size: 1.13em; /* user text */
+  letter-spacing: 0.1em; /* user text */
+ 
+}
+  
+  form { 
+  width: 85.3333333333%;
+  
+}
+  
+  form .field label + span {
+    
+    font-size: 1em;
+    left: 4.5%;
+    top: 14px;
+    
+  }
+  
+  form .field input[type=text]#msg,
+  form .field textarea#msg {
+    
+    height: 45px;
+    
+  }
+  
+  form .field input[type=text]:focus + label, form .field input[type=text].focused + label,
+form .field textarea:focus + label,
+form .field textarea.focused + label {
+  
+  width: 22%;
+  
+}
+	
+
+form .field:hover label {
+  width: 23%;
+  
+}
+  
+  
+  
+}
+
+/** For SMALL **/
+
+/******* Contact Form Media Query *******/
+
+
+@media only screen and (max-width: 1250px) {
+	
+	.work_box {
+		
+		margin: 5px 10px;
+		
+	}
+	
+}
+
+
+
+@media only screen and (max-width: 1250px) and (min-width: 991px) {
+	
+	/****** THANKS SECTION ******/
+	
+	.thanks_link {
+		
+		margin-right: 0.5em;
+		
+	}
+	
+	.speech-bubble {
+		
+		margin-right: 1em;
+		
+	}
+	
+	/****** THANKS SECTION ******/
+	
+	
+}
+
+
+@media only screen and (max-width: 990px) {
+	
+	/*Text*/
+	
+	.about_text {
+		
+		text-align: center;
+		padding: 10px;
+		margin: 20px 0px;
+		
+	}
+	
+	/*Text*/
+	
+	#background_about {
+		
+		max-height: 910px;
+		
+	}
+	
+	.phone_footer {
+		
+		display: none;
+		
+	}
+	
+	/****** THANKS SECTION ******/
+	
+	.thanks_link {
+		
+		margin-right: 0em;
+		margin-left: 2em;
+		
+	}
+	
+	.speech-bubble {
+		
+		margin-right: 0em; 
+		max-width: 25em;
+		width: 100%;
+		
+	}
+	
+	.speech-bubble:after {
+		
+		left: 50%;
+		top: 0%;
+		border: 20px solid transparent;
+		border-bottom-color: rgba(71, 60, 109, 1);
+		border-top: 0;
+		margin-top: -20px;
+		margin-left: -20px;
+		
+	}
+	
+	
+	/****** THANKS SECTION ******/
+	
+	
+}
+
+
+@media only screen and (max-width: 410px) {
+	
+	
+	.logo-container-div {
+		
+		min-height: 40vh;
+		
+	}
+	
+	
+	
+	/*navigation*/
+	
+	.menu_bar{
+    
+    justify-content: center; 
+    
+  }
+	
+	
+	.link, .link_scroll  {
+		
+		font-size: 18px;
+		padding: 0px 20px;
+		background-color: transparent;
+		height: 40px;
+		line-height: 36px; 
+		
+	}
+	
+	.link_scroll {
+		
+		font-size: 18px;
+		padding: 0px 10px;
+		
+		
+	}
+	
+	
+	.link_logo {
+ 
+	width: 90px;
+	height: 50px; 
+}
+	
+    /*navigation*/
+	
+	
+	
+	/*Titles*/
+	
+	#titles, #titles_aboutme, #titles_work, #titles_contact {
+		
+		font-size: 1.3em;
+	
+	}
+	
+	#titles1, #titles2 {
+		
+		font-size: 0.8em;
+		
+	}
+	
+	
+		
+	/*Titles*/
+	
+	
+	
+	/*Text*/
+	
+	.text {
+		
+		font-size: 0.9em;
+		
+	}
+	
+	.about_text {
+		
+		text-align: center;
+		padding: 10px;
+		margin: 20px 0px;
+		
+	}
+	
+	/*Text*/
+	
+	.phone_footer {
+		
+		display: none;
+		
+	}
+	
+	/****** THANKS SECTION ******/
+	
+	.thanks_link {
+		
+		margin-right: 0em;
+		margin-left: 0em;
+		margin-top: 25px;
+		margin-bottom: 20px;
+		
+	}
+	
+	.speech-bubble {
+		
+		margin-right: 0em;
+		margin-left: 0em;
+		
+	}
+	
+	#thank_text {
+		
+		font-size: 1em;
+		
+	}
+	
+	
+	
+	/****** THANKS SECTION ******/
+	
+}
